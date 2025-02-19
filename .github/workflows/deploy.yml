@@ -17,6 +17,6 @@ jobs:
         run: npm install -g vercel
 
       - name: Deploy to Vercel
-        run: vercel --prod --token $FLASK_APP
+        run: vercel --prod --yes --token $FLASK_APP
         env:
           FLASK_APP: ${{ secrets.FlaskApp }}
